@@ -1,0 +1,39 @@
+<div class="darkTheme">
+    <h1>Login UP</h1>
+    <form [formGroup]="registrationForm" (ngSubmit)="handleSubmit()">
+      <h3>Username</h3>
+      <input type="text" formControlName="user" placeholder="Username" autofocus />
+  
+      <h3>Password</h3>
+      <input
+        type="password"
+        placeholder="Password"
+        
+        formControlName="password"
+      />
+      <p class="errorMessage" *ngIf="error">{{ error }}</p>
+      
+      <h3>Confirm Password</h3>
+      <input
+        type="password"
+        placeholder="Validation Password"
+        
+        formControlName="same_password"
+      />
+      
+      <h3>Email</h3>
+      <input
+        type="email"
+        placeholder="Email"
+        
+        formControlName="email"
+      />
+      <br/>
+      <br/>
+  
+      <button >Register</button>
+    </form>
+    <br />
+    <a href="login">Login In</a>
+  </div>
+  

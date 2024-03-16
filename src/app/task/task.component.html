@@ -1,0 +1,45 @@
+<div class="darkTheme">
+    <h1>Task</h1>
+     <button (click)="same()">Same</button> 
+    <button (click)="home()">Home</button>
+    <br/><br/>
+    <div>
+      <form [formGroup]="taskForm" (submit)="handleSubmit()">
+        <h3>Title</h3>
+        <input type="text" formControlName="title" placeholder="Add a title" autofocus/>
+        <br/><br/>
+        <h3>Description</h3>
+        <input type="text" formControlName="description" placeholder="Add a description"/>
+        <br/><br/>
+        <button [class.update]="editing">{{ editing ? 'Update' : 'Create' }}</button>
+      </form>
+      <br/>
+      <button class="canceledit" *ngIf="editing" (click)="cancelEdit()">Cancel Edit</button>
+    </div>
+    <br/><br/>
+    <div>
+      <div class='table-container'>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Operations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let task of tasks">
+              <td class="justified">{{ task.title }}</td>
+              <td class="justified">{{ task.description }}</td>
+              <td>
+                <button class="update" (click)="editTask(task.id.toString())">Edit</button>
+                <button class="delete" (click)="deleteTask(task.id.toString())">Delete</button>
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

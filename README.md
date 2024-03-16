@@ -1,27 +1,121 @@
-# FrontedAngular
+# Angular and Flask with Login create Tasks
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## [Backend link]('https://github.com/diegoperea20/Flask-React-Login-create-Tasks/tree/main/Backend')
 
-## Code scaffolding
+<p align="justify">
+Angular with Flask REST API with sqlalchemy mysql where there is a login and register (you can change password and email, delete account) where each user can create titles and descriptions (you can edit and delete them) and in 'same' section the user can select the count of how many people have the same title he has created and see the emails of those people who have the same title.
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<p align="center">
+  <img src="README-images/login.PNG" alt="Step1">
+</p>
 
-## Build
+<p align="justify">
+First create an account where you must create a username, password ("Must include at least one number.", "Must include at least one lowercase letter,"Must include at least one lowercase letter.", "Must include at least one uppercase letter.", "Must include at least one uppercase letter.","Must include at least one uppercase letter.", "Must include at least one uppercase letter.", "Must include at least one uppercase letter.","Must include at least one special character.", "Must include at least one special character.", "Must include at least one special character.","The length of the password must be equal to or greater than 8 characters.","Must not contain blank spaces.")  Confirm your password and enter an email address.
+</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<p align="center">
+  <img src="README-images/loginup_1.PNG" alt="Step2">
+</p>
 
-## Running unit tests
+<p align="justify">
+After entering the data correctly, click on the "Register" button.
+</p>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p align="center">
+  <img src="README-images/loginup-2.PNG" alt="Step3">
+</p>
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<p align="justify">
+In login enter your username and password, click on the "Login" button.
+</p>
 
-## Further help
+<p align="center">
+  <img src="README-images/login-2.PNG" alt="Step4">
+</p>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+<p align="justify">
+After logging in you will see the home screen where you will see your user name and registration id, in this section you can log out, change your password, delete your account (delete your account and tasks), and create a new task.
+</p>
+
+<p align="center">
+  <img src="README-images/home.PNG" alt="Step5">
+</p>
+
+<p align="justify">
+In change password you can change your password and email if required.
+</p>
+
+<p align="center">
+  <img src="README-images/changepassword.PNG" alt="Step6">
+</p>
+
+<p align="justify">
+In task, you can create a title and a description of your choice, you can edit and delete it, and with the "home" button you go back to home and the "same" button to the same section.
+</p>
+
+<p align="center">
+  <img src="README-images/task-1.PNG" alt="Step7">
+</p>
+
+<p align="justify">
+Once you have created your task you can edit it with the "Edit" button where you will see the title and description, you only have to modify it by clicking on the "Update" button. If you don't want to make the modification click on the "Cancel Edit" button.
+</p>
+
+<p align="center">
+  <img src="README-images/task-edit.PNG" alt="Step8">
+</p>
+<p align="center">
+  <img src="README-images/task-edit-2.PNG" alt="Step9">
+</p>
+<p align="center">
+  <img src="README-images/task-edit-3.PNG" alt="Step10">
+</p>
+
+<p align="justify">
+In this same section there are three buttons in which "Task" to return to Task, the button "Count People Same titile" once clicked counts how many users have the same title of the titles that the user has created in his account and these are shown in a table, the button "People Emails same title" once clicked shows the emails of the users that have the same title that the user has created in his account in a table form.
+</p>
+
+<p align="center">
+  <img src="README-images/same.PNG" alt="Step11">
+</p>
+
+<p align="justify">
+If there are no matching titles, a message will appear where it says: No title matches with other users.
+</p>
+
+<p align="center">
+  <img src="README-images/same-not.PNG" alt="Step12">
+</p>
+
+<p align="justify">
+But if there are the same titles, the table of the selected button appears, in this case "Count People Same title":
+</p>
+<p align="center">
+  <img src="README-images/same-count.PNG" alt="Step13">
+</p>
+
+<p align="justify">
+But if there are the same titles, the table of the selected button appears, in this case "People Emails same title":
+</p>
+<p align="center">
+  <img src="README-images/same-emails.PNG" alt="Step14">
+</p>
+
+## [Same Project with React]('https://github.com/diegoperea20/Flask-React-Login-create-Tasks')
+
+## Steps to implement it
+
+Fronted Angular Options for do it:
+
+```python
+#Download dependencies
+ npm install 
+ npm start
+```

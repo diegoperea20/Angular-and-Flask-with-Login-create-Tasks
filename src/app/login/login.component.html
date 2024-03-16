@@ -1,0 +1,18 @@
+<div class="loginContainer">
+    <h1 class="title">Login</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="handleSubmit()" class="form">
+      <h3 class="subtitle">Username</h3>
+      <input type="text" formControlName="user"  placeholder="Username" autoFocus class="input" />
+      <br />
+      <h3 class="subtitle">Password</h3>
+      <input type="password" formControlName="password" placeholder="Password" class="input" />
+      <br />
+      <br />
+      <button type="submit" class="loginButton">Login</button>
+    </form>
+    <br />
+    <a routerLink="/loginup" class="registerLink">Register</a>
+  
+    <p *ngIf="incorrectLogin" class="errorMessage">Incorrect username or password</p>
+  </div>
+  
