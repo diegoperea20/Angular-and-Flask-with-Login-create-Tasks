@@ -4,7 +4,9 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
 
 
-## [Backend link]('https://github.com/diegoperea20/Flask-React-Login-create-Tasks/tree/main/Backend')
+ [Backend link]('https://github.com/diegoperea20/Flask-React-Login-create-Tasks/tree/main/Backend')
+
+ [Same Project with React]('https://github.com/diegoperea20/Flask-React-Login-create-Tasks')
 
 <p align="justify">
 Angular with Flask REST API with sqlalchemy mysql where there is a login and register (you can change password and email, delete account) where each user can create titles and descriptions (you can edit and delete them) and in 'same' section the user can select the count of how many people have the same title he has created and see the emails of those people who have the same title.
@@ -108,7 +110,7 @@ But if there are the same titles, the table of the selected button appears, in t
   <img src="README-images/same-emails.PNG" alt="Step14">
 </p>
 
-## [Same Project with React]('https://github.com/diegoperea20/Flask-React-Login-create-Tasks')
+[Same Project with React]('https://github.com/diegoperea20/Flask-React-Login-create-Tasks')
 
 ## Steps to implement it
 
